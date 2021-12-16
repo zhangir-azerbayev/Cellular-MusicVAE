@@ -1,2 +1,2 @@
-# CPSC341-Final
+# CPSC431-Final
 A journey through latent space 
