@@ -27,7 +27,7 @@ print('loading model...')
 mel_2bar_config = configs.CONFIG_MAP['cat-mel_2bar_big']
 mel_2bar = TrainedModel(mel_2bar_config, batch_size=4, checkpoint_dir_or_path=BASE_DIR + '/checkpoints/mel_2bar_big.ckpt')
 
-print('doing forward pass...')
+print('doing forward pass (this could take a few minutes)...')
 temperature=1.0
 mel_2_samples = mel_2bar.decode(vecs, length=32, temperature=temperature)
 

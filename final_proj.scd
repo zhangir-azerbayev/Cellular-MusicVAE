@@ -58,7 +58,6 @@ aa    ]8I  88  88      88      88  "8a,   ,a88  88  88,    ,88    88,    88  "8a
 (
 s.waitForBoot
 (
-
 "Hello".postln;
 
 /* Defines the state transition rule according to Stephen Wolfram's elementary cellular automaton convention.
@@ -122,11 +121,10 @@ for (0, ~max_time-1, {arg i;
 //write csv file
 {
     var f;
-    f = File.open("~/scratch/CPSC431-Final/temp.csv".standardizePath, "w");
+    f = File.open(thisProcess.nowExecutingPath.dirname +/+ "temp.csv", "w");
     f.write(~csv);
     f.close;
-};
-"DONE".postln
+}
 )
 )
 /*
@@ -206,7 +204,7 @@ SynthDef(\blip, {|freq, amp|
 r = Routine {
     ~time_step=0;
 	loop {
-        SimpleMIDIFile.read(format("/home/zhangir/scratch/CPSC431-Final/midi/%.mid", ~time_step)).p.(\blip).play;
+        SimpleMIDIFile.read(thisProcess.nowExecutingPath.dirname +/+ format("midi/%.mid", ~time_step)).p.(\blip).play;
 
 		{ v.refresh }.defer;
 
