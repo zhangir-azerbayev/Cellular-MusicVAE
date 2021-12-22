@@ -23,7 +23,7 @@ pip3 install pyfluidsynth magenta
 ```
 I have run into `gcc` issues when trying to install `magenta` in a conda environment. If you are getting `gcc` errors, try disabling conda. 
 
-In case you keep running into compatibility issues with the python script, I've provided sample outputs from my local runs (see final_proj.scd). 
+In case you keep running into compatibility issues with the python script, I've provided sample outputs from my local runs (see `final_proj.scd`). 
 
 ### Running the program
 Open `final_proj.scd` in the SuperCollider IDE. 
