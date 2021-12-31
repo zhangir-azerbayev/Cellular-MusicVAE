@@ -14,6 +14,10 @@ The high-level overview of this music-generating program is as follows:
 
 The particular VAE we use is a pre-trained model called [MusicVAE](https://github.com/magenta/magenta/tree/main/magenta/models/music_vae) that maps 512 dimensional vectors to 1 bar MIDI melodies.
 
+Here's a sample cellular automaton simulation: 
+
+![CA](CA.png)
+
 ## Setup
 
 Below are instructions for running the project. 
